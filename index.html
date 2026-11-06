@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Origin Engine — Research Prototype</title>
+<meta name="description" content="An experimental research instrument for tracking scientific propositions over time under strict historical discipline. Independent prototype. Not an investment tool.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext y='13' font-size='13' fill='%23d32b2b'%3E%E2%97%87%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Questrial&family=Poppins:wght@300;400;500;600&display=swap">
+<style>
+:root{
+  --coral:#fc4c4c; --coral-text:#d32b2b;
+  --ink:#000; --body:#353535; --bg:#fff; --muted:#757575;
+  --rule:#e4ebf3; --rule-strong:#c8c8c8; --wash:#fafafa;
+  --f-head:Questrial,sans-serif; --f-body:Poppins,sans-serif;
+  --ease:cubic-bezier(.65,.01,.05,.99);
+  --maxw:1040px; --gut:40px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--body);
+  font-family:var(--f-body);font-size:14px;line-height:1.9;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--f-head);font-weight:400;line-height:1.05;color:var(--ink);margin:0}
+a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule-strong);transition:color .25s var(--ease)}
+a:hover{color:var(--coral-text);border-bottom-color:var(--coral-text)}
+:focus-visible{outline:2px solid var(--coral);outline-offset:3px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut)}
+.eyebrow{font-family:var(--f-head);font-size:12px;line-height:1.05;text-transform:uppercase;
+  letter-spacing:.14em;color:var(--muted);margin:0 0 10px}
+.eyebrow.accent{color:var(--coral-text)}
+
+header{border-bottom:1px solid var(--rule);padding:46px 0 34px}
+.mark{font-family:var(--f-head);font-size:26px;color:var(--coral-text);line-height:1}
+h1{font-size:40px;letter-spacing:-1px;margin:14px 0 10px}
+.tagline{font-size:16px;line-height:1.75;color:var(--body);max-width:62ch;margin:0}
+.independent{font-family:var(--f-head);font-size:11px;text-transform:uppercase;letter-spacing:.14em;
+  color:var(--muted);margin:22px 0 0}
+
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin:26px 0 0}
+.btn{display:inline-block;background:var(--coral-text);color:#fff;border:0;border-radius:0;
+  padding:13px 26px;font-family:var(--f-head);font-size:13px;letter-spacing:.1em;
+  text-transform:uppercase;transition:background-color .2s var(--ease)}
+.btn:hover{background:var(--ink);color:#fff;border-bottom-color:transparent}
+.btn.ghost{background:none;color:var(--ink);border:1px solid var(--rule-strong)}
+.btn.ghost:hover{border-color:var(--coral-text);color:var(--coral-text)}
+
+section{padding:46px 0;border-bottom:1px solid var(--rule)}
+section h2{font-size:26px;letter-spacing:-.5px;margin:0 0 16px}
+p{max-width:74ch}
+.lede{font-size:15px;line-height:1.85}
+
+.callout{border-left:3px solid var(--coral);padding:4px 0 4px 20px;margin:22px 0;max-width:78ch}
+.callout strong{color:var(--ink);font-weight:500}
+
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 44px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 34px}
+.item{padding:16px 0;border-top:1px solid var(--rule)}
+.item h3{font-size:14px;letter-spacing:0;margin:0 0 5px}
+.item p{font-size:13px;line-height:1.7;color:var(--muted);margin:0;max-width:46ch}
+
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13px}
+th{font-family:var(--f-head);font-size:10px;text-transform:uppercase;letter-spacing:.14em;
+  color:var(--muted);font-weight:400;text-align:left;padding:9px 14px 9px 0;
+  border-bottom:1px solid var(--rule-strong)}
+td{padding:10px 14px 10px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+td.num{font-family:var(--f-head);color:var(--ink);white-space:nowrap}
+.scroll{overflow-x:auto}
+
+ul.plain{margin:8px 0;padding:0;list-style:none}
+ul.plain li{padding:10px 0;border-bottom:1px solid var(--rule);font-size:13px;line-height:1.75;max-width:80ch}
+ul.plain li strong{color:var(--ink);font-weight:500}
+
+footer{padding:34px 0 60px;background:var(--wash);border-top:1px solid var(--rule);
+  font-size:12px;line-height:1.85;color:var(--muted)}
+footer b{color:var(--ink);font-weight:500}
+
+@media screen and (max-width:991px){
+  :root{--gut:28px}
+  h1{font-size:32px}
+  .grid3{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media screen and (max-width:767px){
+  :root{--gut:24px}
+  h1{font-size:27px}
+  section{padding:34px 0}
+  section h2{font-size:22px}
+  .grid2,.grid3{grid-template-columns:1fr;gap:0}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="mark" aria-hidden="true">&#9671;</div>
+    <h1>Origin Engine</h1>
+    <p class="tagline">An experimental research instrument that tracks scientific propositions over
+      time under strict historical discipline &mdash; and reports, in public, where it fails.</p>
+    <p class="independent">Independent research prototype &middot; not affiliated with or endorsed by any investment firm</p>
+    <div class="cta">
+      <a class="btn" href="./app/">Open the live prototype</a>
+      <a class="btn ghost" href="#result">See the experimental result</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow accent">Read this first</p>
+    <h2>What this is, and what it is not</h2>
+    <div class="callout">
+      <p><strong>This is a research prototype, not a product, and it did not work.</strong> Its
+      central hypothesis was tested against a pre-registered protocol and the result was negative:
+      the method performed <em>worse</em> than simply ranking papers by citation count. That result
+      is published here rather than buried, because the point of the exercise was to find out.</p>
+    </div>
+    <p class="lede">Origin Engine asks a narrow question: can a deterministic, evidence-based
+      process identify scientific ideas early, follow them over time, and reconstruct how they
+      contribute to real technologies &mdash; using only information that existed at the time?</p>
+    <p class="lede">It makes <strong>no investment recommendation</strong>, produces
+      <strong>no probability of success</strong>, and has <strong>no demonstrated predictive
+      performance</strong>. Nothing on this site should be read as investment advice or as a
+      claim that the method can identify opportunities early.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Purpose</p>
+    <h2>Why build it at all</h2>
+    <p class="lede">Deep-tech investing depends on reading science before it is obvious. The
+      question is whether that reading can be made systematic and auditable rather than tacit.
+      Origin Engine was built to test that, on one small, historically closed subfield &mdash;
+      pig-to-human kidney xenotransplantation &mdash; with a hard cutoff of 30&nbsp;September&nbsp;2021.
+      Everything the system sees was publicly available before that date. Everything after it is
+      used only to check the answers.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Architecture</p>
+    <h2>How it is put together</h2>
+    <div class="grid3">
+      <div class="item"><h3>Evidence ledger</h3><p>Append-only, checksummed, cutoff-enforced. Four
+        distinct date types; event dates are never inferred from publication dates.</p></div>
+      <div class="item"><h3>Cohort</h3><p>13 scientific propositions extracted from 18 eligible
+        sources under a published merge rule, from a frozen literature query.</p></div>
+      <div class="item"><h3>Assessment</h3><p>Eight matrices, 38 dimensions, five sequential gates.
+        Scores measure documented evidence against fixed anchors &mdash; never likelihood.</p></div>
+      <div class="item"><h3>Missing vs negative</h3><p>A score of zero and &ldquo;no evidence
+        found&rdquo; are different claims and are never conflated. A failed search is never
+        recorded as scientific absence.</p></div>
+      <div class="item"><h3>Versioning</h3><p>Every methodology change is a version bump with the
+        prior version frozen under checksum. Parameters live in configuration, not code.</p></div>
+      <div class="item"><h3>No composite</h3><p>The eight matrices are never summed into a single
+        number, by rule &mdash; a blended score would invite exactly the predictive reading the
+        project disclaims.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Capabilities</p>
+    <h2>What it demonstrably does</h2>
+    <ul class="plain">
+      <li><strong>Reproducibility.</strong> Identical inputs produce identical outputs, byte for
+        byte, across processes and sessions.</li>
+      <li><strong>Temporal discipline.</strong> The historical cutoff is enforced programmatically
+        and verified by test, not asserted.</li>
+      <li><strong>Refusal under pressure.</strong> It declined four pieces of available evidence
+        that would have flattered it &mdash; including a 2024 paper that directly corroborates its
+        own selected case, 28 months outside the observation window.</li>
+      <li><strong>Separating what is unknown from what is absent.</strong> Of 494 dimension
+        records, 362 are explicitly marked as missing evidence with a reason, rather than scored
+        as zero.</li>
+      <li><strong>Self-correction.</strong> Five confident conclusions were overturned during
+        development by running the measurement rather than reasoning about it. Each correction is
+        in the repository with its evidence.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="result">
+  <div class="wrap">
+    <p class="eyebrow accent">The experiment</p>
+    <h2>The result was negative, and that is the finding</h2>
+    <p class="lede">A pre-registered experiment asked whether the method could recover the
+      documented scientific ancestry of the first pig-organ transplants in humans, using only
+      pre-cutoff evidence. The protocol, the evaluation set and all candidate rankings were frozen
+      under SHA-256 <em>before</em> any answer key was retrieved.</p>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Method</th><th>Recall@100</th><th>Recall@250</th><th>Verdict</th></tr></thead>
+        <tbody>
+          <tr><td>Origin Engine protocol</td><td class="num">16.0%</td><td class="num">40.0%</td><td>fails all three decision tests</td></tr>
+          <tr><td>Plain date-ordered retrieval</td><td class="num">20.0%</td><td class="num">46.0%</td><td>beats Origin Engine</td></tr>
+          <tr><td>Pre-cutoff citation ranking</td><td class="num">32.0%</td><td class="num">54.0%</td><td>best method tested</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="lede">The diagnosis mattered more than the score. Of 317 documented antecedents
+      available before the cutoff, only 50 were in the search corpus at all. Of the 267 missing,
+      just six predated the corpus window &mdash; <strong>261 sat inside it and were missed by the
+      topical query</strong>. Sampling those, only 10% mention xenotransplantation: they are
+      single-cell methods, assay platforms, renal physiology and general immunology.</p>
+    <div class="callout">
+      <p><strong>The ancestry of a breakthrough is mostly not in its own field.</strong> A
+      subfield-bounded corpus structurally cannot contain it, so the corpus boundary &mdash; not
+      the scoring &mdash; was the binding constraint. No amount of ranking fixes that.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Limitations</p>
+    <h2>Stated plainly</h2>
+    <ul class="plain">
+      <li><strong>No independent review has occurred.</strong> Every judgement was made by one
+        reader. A blinded review package is prepared and unused.</li>
+      <li><strong>Effective dimensionality is one.</strong> Of 38 designed dimensions, 12 were ever
+        scored, nine of those are identical across all 13 propositions, and a single dimension
+        determines every result.</li>
+      <li><strong>Six of eight matrices cannot be computed</strong> &mdash; too little evidence
+        exists at the level of an individual proposition.</li>
+      <li><strong>Only the first of five gates was ever evaluated.</strong></li>
+      <li><strong>No outcome variable.</strong> Nothing in the cohort has a recorded success or
+        failure, so no predictive claim is testable on it.</li>
+      <li><strong>One subfield, one cutoff, no replication.</strong> Nothing here generalises
+        beyond pig-organ xenotransplantation.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Transferable method</p>
+    <h2>What actually transfers to an investment workflow</h2>
+    <p class="lede">The matrices did not survive testing. <strong>The development discipline
+      did</strong> &mdash; and that is the part worth reusing. Every item below describes the
+      <em>approach</em> used to build and falsify this prototype, not a validated capability.</p>
+    <div class="grid2">
+      <div class="item"><h3>Deal sourcing</h3><p>A frozen query, explicit eligibility rules and an
+        append-only evidence ledger make a sourcing thesis auditable: what was seen, when, and why
+        something was excluded. This prototype also shows the failure mode &mdash; a topical query
+        missed 82% of what mattered.</p></div>
+      <div class="item"><h3>Investment diligence</h3><p>Separating &ldquo;no evidence found&rdquo;
+        from &ldquo;evidence of absence&rdquo;, and recording a search status for every open
+        question, turns a diligence memo into a list of resolvable gaps rather than a verdict.</p></div>
+      <div class="item"><h3>Portfolio monitoring</h3><p>Append-only reassessment with a hard
+        as-of date shows what changed between two points in time and &mdash; more usefully &mdash;
+        proves when nothing changed, without rewriting the earlier view.</p></div>
+      <div class="item"><h3>Finance</h3><p>Deterministic, checksummed, versioned outputs:
+        identical inputs reproduce identical figures, and every parameter change is a recorded
+        version bump with the prior version preserved.</p></div>
+      <div class="item"><h3>Investor relations</h3><p>Reporting that states its own limits.
+        This site leads with a negative result and a seven-point disclosure &mdash; the same
+        pattern applied to performance reporting builds more trust than selective presentation.</p></div>
+      <div class="item"><h3>The general pattern</h3><p>Pre-register the question, freeze the
+        method under checksum, define the failure condition in advance, then publish whichever
+        answer arrives. It is cheap, and it is what made this prototype's negative result
+        trustworthy.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>Origin Engine</b> is an independent research prototype built as a methodological
+    exercise. It is <b>experimental</b>, has <b>no demonstrated predictive performance</b>, and
+    provides <b>no investment recommendation, valuation or probability of success</b>. The live
+    prototype carries a provisional-methodology banner throughout.</p>
+    <p>Not affiliated with, endorsed by, or produced for any investment firm. Company and product
+    names referenced in the underlying research belong to their respective owners. The visual
+    system is adapted from publicly served design tokens; no logos, artwork or proprietary content
+    are reproduced.</p>
+    <p>Historical cutoff 2021-09-30 &middot; methodology MATRIX-v1.2 &middot; protocol PROTOCOL-v1.1
+    &middot; <a href="./app/">live prototype</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

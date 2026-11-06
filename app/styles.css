@@ -1,0 +1,253 @@
+/* Origin Engine — visual system derived from the publicly served Playground Global stylesheet.
+   Tokens marked OBSERVED were measured from the live site; ADAPTATION marks our own decisions.
+   See origin-engine/PLAYGROUND_DESIGN_REFERENCE.md. Independent prototype, no affiliation. */
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+  /* colour — OBSERVED */
+  --coral:#fc4c4c;          /* --primary-color — OBSERVED. Fills, rules, bars, nodes. */
+  /* ADAPTATION — #fc4c4c on white is 3.35:1, below WCAG AA 4.5:1 for text. A darkened
+     text-grade coral (5.06:1) is used wherever coral carries words; the brand value is
+     kept for fills, rules and graphics, where the 3:1 non-text threshold applies. */
+  --coral-text:#d32b2b;
+  --ink:#000;               /* --secondary-color */
+  --body:#353535;           /* --tertiary-color */
+  --bg:#fff;                /* --white */
+  --muted:#757575;
+  --rule:#e4ebf3;           /* computed hairline */
+  --rule-strong:#c8c8c8;
+  --wash:#fafafa;
+
+  /* status — ADAPTATION: the reference has no status system.
+     MONITOR is deliberately neutral, never red: it is not a rejection. */
+  --advance:var(--coral-text);
+  --monitor:var(--body);
+  /* ADAPTATION — 4.5:1 on white. NOT_COMPUTABLE and "never evaluated" are meaningful
+     states, so they are de-emphasised by dashed borders and weight, never by low contrast:
+     concealing missing evidence is exactly what the disclosure forbids. */
+  --absent:#6e6e6e;
+
+  /* type — OBSERVED */
+  --f-head:Questrial,sans-serif;
+  --f-body:Poppins,sans-serif;
+  --lh-head:1.05;
+  --lh-body:1.9;
+
+  /* motion — OBSERVED signature easing */
+  --ease:cubic-bezier(.65,.01,.05,.99);
+  --t-color:color .25s var(--ease);
+  --t-all:all .2s var(--ease);
+
+  --radius:0;               /* OBSERVED: primary button radius is 0 */
+  --maxw:1100px;            /* ADAPTATION of .container-small (1055px), for data density */
+  --gut:40px;
+  --disc-cols:3;
+}
+
+/* ADAPTATION — the reference site is light-only, and brand compatibility has to hold on a
+   machine we do not control, so light is unconditional rather than following the OS setting.
+   A restrained dark variant stays available as an explicit opt-in: <html data-theme="dark">. */
+:root[data-theme="dark"]{
+  --ink:#f4f2ee;--body:#c9c6c0;--bg:#111110;--muted:#8d8a84;
+  --rule:#2a2a28;--rule-strong:#3d3c39;--wash:#191918;--absent:#6d6a65;
+  --coral-text:#ff7a7a;--advance:#ff7a7a;}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--body);
+  font-family:var(--f-body);font-size:14px;line-height:var(--lh-body);
+  -webkit-font-smoothing:antialiased}
+
+h1,h2,h3,h4{font-family:var(--f-head);font-weight:400;line-height:var(--lh-head);
+  color:var(--ink);margin:0}
+a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule-strong);
+  transition:var(--t-color)}
+a:hover{color:var(--coral-text);border-bottom-color:var(--coral-text)}
+:focus-visible{outline:2px solid var(--coral);outline-offset:3px}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut)}
+
+/* ---------------------------------------------------------------- eyebrow */
+/* OBSERVED: Questrial 12px, line-height 1.05, uppercase micro-label */
+.eyebrow{font-family:var(--f-head);font-size:12px;line-height:1.05;text-transform:uppercase;
+  letter-spacing:.14em;color:var(--muted);margin:0 0 10px}
+.eyebrow.accent{color:var(--coral-text)}
+
+/* ---------------------------------------------------------------- header */
+header{border-bottom:1px solid var(--rule);background:var(--bg)}
+.bar{max-width:var(--maxw);margin:0 auto;padding:26px var(--gut) 20px;
+  display:flex;gap:28px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+.id{display:flex;gap:14px;align-items:baseline}
+/* ADAPTATION — our own plain glyph. Playground's mark is not used. */
+.mark{font-family:var(--f-head);font-size:26px;line-height:1;color:var(--coral-text);
+  transform:translateY(2px)}
+h1{font-size:32px;letter-spacing:-1px}              /* OBSERVED: nav/hero tracking -1px */
+.sub{margin:6px 0 0;font-size:13px;color:var(--muted);max-width:52ch;line-height:1.7}
+.independent{font-family:var(--f-head);font-size:11px;text-transform:uppercase;
+  letter-spacing:.14em;color:var(--muted);margin:10px 0 0}
+
+.cutoff{display:flex;flex-direction:column;gap:8px}
+.cutoff-label{font-family:var(--f-head);font-size:11px;text-transform:uppercase;
+  letter-spacing:.14em;color:var(--muted)}
+.seg{display:flex;border:1px solid var(--rule-strong)}
+.seg button{appearance:none;background:none;border:0;border-right:1px solid var(--rule-strong);
+  font-family:var(--f-head);font-size:12px;letter-spacing:.04em;color:var(--body);
+  padding:9px 14px;cursor:pointer;transition:var(--t-all)}
+.seg button:last-child{border-right:0}
+.seg button:hover{color:var(--coral-text)}
+.seg button[aria-pressed="true"]{background:var(--coral-text);color:#fff}
+
+.banner{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut) 8px;
+  font-size:12px;line-height:1.7;color:var(--muted)}
+.banner strong{color:var(--ink);font-weight:500}
+.banner.note{padding-bottom:16px;font-style:italic}
+
+/* ---------------------------------------------------------------- tabs */
+nav[role="tablist"]{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut);
+  display:flex;gap:30px;flex-wrap:wrap}
+nav[role="tablist"] button{appearance:none;background:none;border:0;border-bottom:2px solid transparent;
+  font-family:var(--f-head);font-size:13px;text-transform:uppercase;letter-spacing:.12em;
+  color:var(--muted);padding:12px 0 14px;cursor:pointer;transition:var(--t-all)}
+nav[role="tablist"] button:hover{color:var(--ink)}
+nav[role="tablist"] button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--coral)}
+
+/* ---------------------------------------------------------------- disclosure */
+.disclosure{max-width:var(--maxw);margin:18px auto 0;padding:0 var(--gut)}
+.disclosure h2{font-size:22px;letter-spacing:-.4px;margin:0 0 8px}
+.disclosure .lede{margin:0 0 14px;font-size:13.5px;line-height:1.7;color:var(--body);max-width:78ch}
+.disclosure-list{margin:0;padding:0;list-style:none;
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 34px}
+.disclosure-list li{font-size:12.5px;line-height:1.6;color:var(--muted);
+  padding:10px 0;border-top:1px solid var(--rule);max-width:46ch}
+.disclosure-list strong{display:block;font-family:var(--f-head);font-size:13px;
+  letter-spacing:.01em;color:var(--ink);font-weight:400;margin-bottom:3px}
+.disclosure-list em{color:var(--ink);font-style:normal}
+
+/* ---------------------------------------------------------------- views */
+main{max-width:var(--maxw);margin:0 auto;padding:44px var(--gut) 72px}
+.view{display:none}
+.view.active{display:block}
+.view>h2{font-size:32px;letter-spacing:-1px;margin:0 0 12px}
+.lede{font-size:14px;line-height:1.85;color:var(--body);max-width:72ch;margin:0 0 8px}
+.view h3{font-size:18px;letter-spacing:-.2px}
+
+.section-head{margin:46px 0 14px;padding-top:18px;border-top:1px solid var(--rule)}
+.section-head h3{margin:0}
+.section-head .eyebrow{margin-bottom:8px}
+
+/* ------------------------------------------------- row (replaces card) */
+/* OBSERVED: the reference has no cards, panels or shadows — hairlines and whitespace only. */
+.card{position:relative;padding:26px 0 26px 24px;border-top:1px solid var(--rule)}
+.card::before{content:"";position:absolute;left:0;top:26px;bottom:26px;width:2px;
+  background:var(--rule-strong)}
+.card.ADVANCE::before{background:var(--advance)}
+.card.MONITOR::before{background:var(--monitor)}
+.card>h3{margin:4px 0 14px;font-size:19px;line-height:1.3;letter-spacing:-.2px;max-width:74ch}
+.tid{font-family:var(--f-head);font-size:11px;text-transform:uppercase;letter-spacing:.14em;
+  color:var(--muted)}
+
+/* ---------------------------------------------------------------- pills */
+.pill{display:inline-block;font-family:var(--f-head);font-size:10px;text-transform:uppercase;
+  letter-spacing:.16em;padding:4px 9px;border:1px solid currentColor;margin-right:10px;
+  vertical-align:.14em;line-height:1.05}
+.pill.ADVANCE{color:var(--advance)}
+.pill.MONITOR{color:var(--monitor)}
+.pill.NOT_COMPUTABLE{color:var(--absent);border-style:dashed}
+
+.tag{display:inline-block;font-family:var(--f-head);font-size:10px;text-transform:uppercase;
+  letter-spacing:.14em;color:var(--muted);border:1px solid var(--rule-strong);
+  padding:3px 7px;margin-right:8px;line-height:1.05}
+.tag.miss{color:var(--absent);border-style:dashed}
+
+/* ---------------------------------------------------------------- metrics */
+.grid{display:flex;flex-wrap:wrap;gap:0;margin:0 0 16px;border-top:1px solid var(--rule)}
+.metric{padding:12px 28px 12px 0;margin-right:28px;border-right:1px solid var(--rule);
+  min-width:112px}
+.metric:last-child{border-right:0;margin-right:0}
+.metric .k{font-family:var(--f-head);font-size:10px;text-transform:uppercase;
+  letter-spacing:.14em;color:var(--muted);margin-bottom:5px}
+.metric .v{font-family:var(--f-head);font-size:26px;line-height:1.05;color:var(--ink)}
+.metric .v.small{font-size:13px;letter-spacing:.06em;color:var(--absent);text-transform:uppercase}
+
+/* ---------------------------------------------------------------- note */
+.note-box{margin:14px 0;padding:14px 0 14px 16px;border-left:1px solid var(--rule-strong);
+  font-size:13px;line-height:1.8;color:var(--muted);max-width:80ch}
+.note-box b{color:var(--ink);font-weight:500}
+.note-box.ok{border-left-color:var(--coral)}
+
+/* --------------------------------- gate schematic (ADAPTATION of the ◇ motif) */
+.gates{display:flex;align-items:center;gap:0;margin:16px 0 4px;flex-wrap:wrap}
+.gate{display:flex;align-items:center;gap:0;font-family:var(--f-head);font-size:10px;
+  text-transform:uppercase;letter-spacing:.14em}
+.gate .node{width:9px;height:9px;border:1px solid var(--absent);transform:rotate(45deg);
+  margin-right:8px}
+.gate.on .node{border-color:var(--coral);background:var(--coral)}
+.gate .lbl{color:var(--absent)}
+.gate.on .lbl{color:var(--ink)}
+.gate .wire{width:34px;height:1px;background:var(--rule-strong);margin:0 10px}
+.gate.on .wire{background:var(--coral)}
+
+/* ---------------------------------------------------------------- tables */
+table{width:100%;border-collapse:collapse;margin:10px 0 4px;font-size:13px}
+th{font-family:var(--f-head);font-size:10px;text-transform:uppercase;letter-spacing:.14em;
+  color:var(--muted);font-weight:400;text-align:left;padding:9px 14px 9px 0;
+  border-bottom:1px solid var(--rule-strong);white-space:nowrap}
+td{padding:11px 14px 11px 0;border-bottom:1px solid var(--rule);
+  color:var(--body);vertical-align:top;overflow-wrap:anywhere}
+/* Long status tokens (SEARCHED_NOT_FOUND) must wrap rather than clip in the
+   two-column comparison, where each table has roughly half the width. */
+.cols th{white-space:normal}
+.cols td,.cols th{padding-right:10px;font-size:12.5px}
+td.num{font-family:var(--f-head);color:var(--ink)}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* ---------------------------------------------------------------- columns */
+.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 44px}
+.cols .card{border-top:1px solid var(--rule)}
+
+ul.plain{margin:6px 0;padding:0;list-style:none}
+ul.plain li{padding:11px 0;border-bottom:1px solid var(--rule);font-size:13px;
+  line-height:1.8;max-width:80ch}
+
+footer{border-top:1px solid var(--rule);background:var(--wash)}
+#limitations{max-width:var(--maxw);margin:0 auto;padding:26px var(--gut) 44px;
+  font-size:12px;line-height:1.85;color:var(--muted)}
+#limitations b{color:var(--ink);font-weight:500}
+
+/* ---------------------------------------------------------------- responsive */
+/* OBSERVED breakpoints: 479 / 767 / 991 / 1440 */
+@media screen and (max-width:991px){
+  :root{--gut:28px}
+  h1{font-size:28px}
+  .view>h2{font-size:28px}
+  .disclosure-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}
+  .cols{grid-template-columns:1fr;gap:0}
+}
+@media screen and (max-width:767px){
+  :root{--gut:24px}
+  .bar{padding:24px var(--gut) 20px;gap:18px}
+  nav[role="tablist"]{gap:20px}
+  .disclosure-list{grid-template-columns:1fr;gap:0}
+  nav[role="tablist"] button{font-size:12px}
+  main{padding:32px var(--gut) 56px}
+  .metric{min-width:96px;padding-right:20px;margin-right:20px}
+  .metric .v{font-size:22px}
+}
+@media screen and (max-width:479px){
+  h1{font-size:24px}
+  .view>h2{font-size:24px}
+  .disclosure h2{font-size:20px}
+  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .metric{border-right:0;margin-right:0;padding-right:12px;min-width:0}
+  .card{padding-left:18px}
+  .seg button{padding:8px 11px;font-size:11px}
+}
+@media screen and (min-width:1440px){
+  :root{--maxw:1180px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;scroll-behavior:auto !important}
+}

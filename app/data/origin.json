@@ -1,0 +1,1160 @@
+{
+ "meta": {
+  "provisional_banner": "PROVISIONAL \u2014 MATRIX-v1.2 parameters authorized for implementation testing only. Not approved methodology. Not an investment assessment.",
+  "methodology_version": "MATRIX-v1.2",
+  "protocol_version": "PROTOCOL-v1.1",
+  "generated": "2026-11-05",
+  "source_commit": "254c5e9",
+  "supported_as_of_dates": [
+   "2021-09-30",
+   "2022-02-28"
+  ],
+  "as_of_note": "Only these two dates have been evaluated. No other date has been assessed, and the selector offers no others. Only OE-XENO-012 was reassessed at 2022-02-28; the other twelve thoughts retain their 2021-09-30 state and were not re-run.",
+  "reassessed_at_later_date": [
+   "OE-XENO-012"
+  ],
+  "composite_score": null,
+  "investment_probability": null,
+  "limitations": [
+   {
+    "id": "B-8",
+    "text": "Independent scientific review remains OPEN. Every anchor was assigned by one reader."
+   },
+   {
+    "id": "B-14",
+    "text": "Research-program and venture attribution remains unresolved. Six matrices cannot reach the coverage floor from this cohort."
+   },
+   {
+    "id": "B-15",
+    "text": "Three corrected STM-2 assessments rely on abstracts alone; full text was not retrievable."
+   }
+  ],
+  "what_this_establishes": "Historical preservation and evidence discipline. NOT validated investment prediction."
+ },
+ "living_funnel": [
+  {
+   "thought_id": "OE-XENO-001",
+   "proposition": "Transgenic expression of human complement-regulatory proteins in the donor pig reduces complement-mediated injury to the renal xenograft",
+   "tuple": {
+    "barrier": "complement-mediated graft injury",
+    "modality": "donor genome edit, human transgene insertion",
+    "target": "graft protection from complement",
+    "claimed_effect": "reduced complement-mediated injury"
+   },
+   "g1_decision": "MONITOR",
+   "g1_decision_first_pass": "MONITOR",
+   "g1_superseded": false,
+   "STM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "POM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "unmet_conditions": [
+    "G1.1"
+   ],
+   "current_evaluated_gate": "G1",
+   "gates_never_evaluated": [
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+   ],
+   "next_gate_status": {
+    "gate": "G2",
+    "blocked_by": "coverage(SVM) below the 0.700 floor at G2.4",
+    "svm_coverage": 0,
+    "svm_matrix_state": "NOT_COMPUTABLE",
+    "missing": [
+     "SVM-1",
+     "SVM-2",
+     "SVM-3",
+     "SVM-4"
+    ]
+   },
+   "as_of": "2021-09-30",
+   "primary_source": {
+    "source_id": "27914702",
+    "title": "Renal xenotransplantation: experimental progress and clinical prospects.",
+    "date": "2016-12-01",
+    "type": "S1",
+    "role": "PRIMARY_COHORT",
+    "url": "https://europepmc.org/article/MED/27914702",
+    "independent_validation_eligible": "YES"
+   }
+  },
+  {
+   "thought_id": "OE-XENO-002",
+   "proposition": "Deleting carbohydrate xenoantigens from the donor pig genome reduces preformed antibody binding sufficiently to prolong renal xenograft survival",
+   "tuple": {
+    "barrier": "preformed xenoreactive antibody binding",
+    "modality": "donor genome edit, carbohydrate antigen deletion",
+    "target": "renal xenograft survival",
+    "claimed_effect": "reduced antibody binding and prolonged survival"
+   },
+   "g1_decision": "MONITOR",
+   "g1_decision_first_pass": "MONITOR",
+   "g1_superseded": false,
+   "STM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "POM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "unmet_conditions": [
+    "G1.1"
+   ],
+   "current_evaluated_gate": "G1",
+   "gates_never_evaluated": [
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+   ],
+   "next_gate_status": {
+    "gate": "G2",
+    "blocked_by": "coverage(SVM) below the 0.700 floor at G2.4",
+    "svm_coverage": 0,
+    "svm_matrix_state": "NOT_COMPUTABLE",
+    "missing": [
+     "SVM-1",
+     "SVM-2",
+     "SVM-3",
+     "SVM-4"
+    ]
+   },
+   "as_of": "2021-09-30",
+   "primary_source": {
+    "source_id": "27914702",
+    "title": "Renal xenotransplantation: experimental progress and clinical prospects.",
+    "date": "2016-12-01",
+    "type": "S1",
+    "role": "PRIMARY_COHORT",
+    "url": "https://europepmc.org/article/MED/27914702",
+    "independent_validation_eligible": "YES"
+   }
+  },
+  {
+   "thought_id": "OE-XENO-003",
+   "proposition": "Graft growth discordance is donor-intrinsic and can be addressed by donor modification rather than by recipient management",
+   "tuple": {
+    "barrier": "graft growth discordance",
+    "modality": "donor modification of growth signalling",
+    "target": "graft size stability",
+    "claimed_effect": "prevention of graft overgrowth"
+   },
+   "g1_decision": "MONITOR",
+   "g1_decision_first_pass": "MONITOR",
+   "g1_superseded": false,
+   "STM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "POM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "unmet_conditions": [
+    "G1.1"
+   ],
+   "current_evaluated_gate": "G1",
+   "gates_never_evaluated": [
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+   ],
+   "next_gate_status": {
+    "gate": "G2",
+    "blocked_by": "coverage(SVM) below the 0.700 floor at G2.4",
+    "svm_coverage": 0,
+    "svm_matrix_state": "NOT_COMPUTABLE",
+    "missing": [
+     "SVM-1",
+     "SVM-2",
+     "SVM-3",
+     "SVM-4"
+    ]
+   },
+   "as_of": "2021-09-30",
+   "primary_source": {
+    "source_id": "29687010",
+    "title": "Remaining Physiological Barriers in Porcine Kidney Xenotransplantation: Potential Pathways behind Proteinuria as well as Factors Related to Growth Dis",
+    "date": "2018-03-04",
+    "type": "S1",
+    "role": "PRIMARY_COHORT",
+    "url": "https://europepmc.org/article/MED/29687010",
+    "independent_validation_eligible": "YES"
+   }
+  },
+  {
+   "thought_id": "OE-XENO-004",
+   "proposition": "Proteinuria in porcine renal xenografts arises from identifiable physiological incompatibilities rather than from rejection alone",
+   "tuple": {
+    "barrier": "physiological incompatibility, proteinuria",
+    "modality": "mechanistic characterisation of donor-recipient physiology",
+    "target": "graft function",
+    "claimed_effect": "proteinuria attributable to defined pathways"
+   },
+   "g1_decision": "MONITOR",
+   "g1_decision_first_pass": "MONITOR",
+   "g1_superseded": false,
+   "STM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "POM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "unmet_conditions": [
+    "G1.1"
+   ],
+   "current_evaluated_gate": "G1",
+   "gates_never_evaluated": [
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+   ],
+   "next_gate_status": {
+    "gate": "G2",
+    "blocked_by": "coverage(SVM) below the 0.700 floor at G2.4",
+    "svm_coverage": 0,
+    "svm_matrix_state": "NOT_COMPUTABLE",
+    "missing": [
+     "SVM-1",
+     "SVM-2",
+     "SVM-3",
+     "SVM-4"
+    ]
+   },
+   "as_of": "2021-09-30",
+   "primary_source": {
+    "source_id": "29687010",
+    "title": "Remaining Physiological Barriers in Porcine Kidney Xenotransplantation: Potential Pathways behind Proteinuria as well as Factors Related to Growth Dis",
+    "date": "2018-03-04",
+    "type": "S1",
+    "role": "PRIMARY_COHORT",
+    "url": "https://europepmc.org/article/MED/29687010",
+    "independent_validation_eligible": "YES"
+   }
+  },
+  {
+   "thought_id": "OE-XENO-005",
+   "proposition": "Porcine endogenous retrovirus expression does not depend on porcine cytomegalovirus co-infection, so the two constitute separate infectious barriers",
+   "tuple": {
+    "barrier": "porcine viral infectious barrier",
+    "modality": "donor herd virological characterisation and screening",
+    "target": "graft survival and recipient safety",
+    "claimed_effect": "the two viruses act as independent barriers"
+   },
+   "g1_decision": "ADVANCE",
+   "g1_decision_first_pass": "ADVANCE",
+   "g1_superseded": false,
+   "STM": {
+    "score": 2.69,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "POM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "unmet_conditions": [],
+   "current_evaluated_gate": "G1",
+   "gates_never_evaluated": [
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+   ],
+   "next_gate_status": {
+    "gate": "G2",
+    "blocked_by": "coverage(SVM) below the 0.700 floor at G2.4",
+    "svm_coverage": 0.35,
+    "svm_matrix_state": "NOT_COMPUTABLE",
+    "missing": [
+     "SVM-2",
+     "SVM-3",
+     "SVM-4"
+    ]
+   },
+   "as_of": "2021-09-30",
+   "primary_source": {
+    "source_id": "29624743",
+    "title": "Absence of interaction between porcine endogenous retrovirus and porcine cytomegalovirus in pig-to-baboon renal xenotransplantation in vivo.",
+    "date": "2018-04-06",
+    "type": "S1",
+    "role": "PRIMARY_COHORT",
+    "url": "https://europepmc.org/article/MED/29624743",
+    "independent_validation_eligible": "YES"
+   }
+  },
+  {
+   "thought_id": "OE-XENO-006",
+   "proposition": "Transgenic expression of human thromboregulatory proteins reduces coagulation dysregulation in pig renal xenografts",
+   "tuple": {
+    "barrier": "coagulation dysregulation",
+    "modality": "donor genome edit, thromboregulatory transgene",
+    "target": "graft survival",
+    "claimed_effect": "reduced thrombotic microangiopathy"
+   },
+   "g1_decision": "MONITOR",
+   "g1_decision_first_pass": "MONITOR",
+   "g1_superseded": false,
+   "STM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "POM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "unmet_conditions": [
+    "G1.1"
+   ],
+   "current_evaluated_gate": "G1",
+   "gates_never_evaluated": [
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+   ],
+   "next_gate_status": {
+    "gate": "G2",
+    "blocked_by": "coverage(SVM) below the 0.700 floor at G2.4",
+    "svm_coverage": 0,
+    "svm_matrix_state": "NOT_COMPUTABLE",
+    "missing": [
+     "SVM-1",
+     "SVM-2",
+     "SVM-3",
+     "SVM-4"
+    ]
+   },
+   "as_of": "2021-09-30",
+   "primary_source": {
+    "source_id": "30247446",
+    "title": "Perspectives on the Optimal Genetically Engineered Pig in 2018 for Initial Clinical Trials of Kidney or Heart Xenotransplantation.",
+    "date": "2018-09-24",
+    "type": "S1",
+    "role": "PRIMARY_COHORT",
+    "url": "https://europepmc.org/article/MED/30247446",
+    "independent_validation_eligible": "YES"
+   }
+  },
+  {
+   "thought_id": "OE-XENO-007",
+   "proposition": "An optimal donor pig genotype for a first clinical renal trial can be specified from the modifications available at a given date",
+   "tuple": {
+    "barrier": "donor genotype selection for first clinical use",
+    "modality": "comparative evaluation of available donor genotypes",
+    "target": "specification of a trial-ready donor pig",
+    "claimed_effect": "a defensible genotype specification"
+   },
+   "g1_decision": "MONITOR",
+   "g1_decision_first_pass": "MONITOR",
+   "g1_superseded": false,
+   "STM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "POM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "unmet_conditions": [
+    "G1.1"
+   ],
+   "current_evaluated_gate": "G1",
+   "gates_never_evaluated": [
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+   ],
+   "next_gate_status": {
+    "gate": "G2",
+    "blocked_by": "coverage(SVM) below the 0.700 floor at G2.4",
+    "svm_coverage": 0,
+    "svm_matrix_state": "NOT_COMPUTABLE",
+    "missing": [
+     "SVM-1",
+     "SVM-2",
+     "SVM-3",
+     "SVM-4"
+    ]
+   },
+   "as_of": "2021-09-30",
+   "primary_source": {
+    "source_id": "30247446",
+    "title": "Perspectives on the Optimal Genetically Engineered Pig in 2018 for Initial Clinical Trials of Kidney or Heart Xenotransplantation.",
+    "date": "2018-09-24",
+    "type": "S1",
+    "role": "PRIMARY_COHORT",
+    "url": "https://europepmc.org/article/MED/30247446",
+    "independent_validation_eligible": "YES"
+   }
+  },
+  {
+   "thought_id": "OE-XENO-008",
+   "proposition": "Adsorbing heterologous antibodies from the recipient reduces preformed antibody load and supports renal xenograft survival",
+   "tuple": {
+    "barrier": "preformed xenoreactive antibody binding",
+    "modality": "recipient extracorporeal antibody adsorption",
+    "target": "renal xenograft survival",
+    "claimed_effect": "reduced heterologous antibody and supported survival"
+   },
+   "g1_decision": "ADVANCE",
+   "g1_decision_first_pass": "MONITOR",
+   "g1_superseded": true,
+   "STM": {
+    "score": 2.69,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "POM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "unmet_conditions": [],
+   "current_evaluated_gate": "G1",
+   "gates_never_evaluated": [
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+   ],
+   "next_gate_status": {
+    "gate": "G2",
+    "blocked_by": "coverage(SVM) below the 0.700 floor at G2.4",
+    "svm_coverage": 0,
+    "svm_matrix_state": "NOT_COMPUTABLE",
+    "missing": [
+     "SVM-1",
+     "SVM-2",
+     "SVM-3",
+     "SVM-4"
+    ]
+   },
+   "as_of": "2021-09-30",
+   "primary_source": {
+    "source_id": "30979492",
+    "title": "Heterologous Antibodies Adsorption in Xenotransplantation of a Landrace Piglet Kidney Into a Rhesus Monkey.",
+    "date": "2019-01-09",
+    "type": "S1",
+    "role": "PRIMARY_COHORT",
+    "url": "https://europepmc.org/article/MED/30979492",
+    "independent_validation_eligible": "YES"
+   }
+  },
+  {
+   "thought_id": "OE-XENO-009",
+   "proposition": "Platelet count, plasma fibrinogen and inflammatory parameters indicate impending pig renal xenograft failure before overt loss of function",
+   "tuple": {
+    "barrier": "late detection of graft failure",
+    "modality": "recipient biomarker monitoring",
+    "target": "early detection of impending failure",
+    "claimed_effect": "parameters predict failure in advance"
+   },
+   "g1_decision": "ADVANCE",
+   "g1_decision_first_pass": "MONITOR",
+   "g1_superseded": true,
+   "STM": {
+    "score": 2.69,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "POM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "unmet_conditions": [],
+   "current_evaluated_gate": "G1",
+   "gates_never_evaluated": [
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+   ],
+   "next_gate_status": {
+    "gate": "G2",
+    "blocked_by": "coverage(SVM) below the 0.700 floor at G2.4",
+    "svm_coverage": 0,
+    "svm_matrix_state": "NOT_COMPUTABLE",
+    "missing": [
+     "SVM-1",
+     "SVM-2",
+     "SVM-3",
+     "SVM-4"
+    ]
+   },
+   "as_of": "2021-09-30",
+   "primary_source": {
+    "source_id": "31445094",
+    "title": "Indicators of impending pig kidney and heart xenograft failure: Relevance to clinical organ xenotransplantation - Review article.",
+    "date": "2019-08-21",
+    "type": "S1",
+    "role": "PRIMARY_COHORT",
+    "url": "https://europepmc.org/article/MED/31445094",
+    "independent_validation_eligible": "YES"
+   }
+  },
+  {
+   "thought_id": "OE-XENO-010",
+   "proposition": "Pig cells harbouring porcine endogenous retrovirus can be detected in non-human-primate tissue remote from the graft after renal xenotransplantation",
+   "tuple": {
+    "barrier": "cross-species retroviral transmission risk",
+    "modality": "recipient tissue surveillance and detection",
+    "target": "recipient safety",
+    "claimed_effect": "detectable dissemination of donor cells"
+   },
+   "g1_decision": "ADVANCE",
+   "g1_decision_first_pass": "ADVANCE",
+   "g1_superseded": false,
+   "STM": {
+    "score": 2.69,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "POM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "unmet_conditions": [],
+   "current_evaluated_gate": "G1",
+   "gates_never_evaluated": [
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+   ],
+   "next_gate_status": {
+    "gate": "G2",
+    "blocked_by": "coverage(SVM) below the 0.700 floor at G2.4",
+    "svm_coverage": 0.35,
+    "svm_matrix_state": "NOT_COMPUTABLE",
+    "missing": [
+     "SVM-2",
+     "SVM-3",
+     "SVM-4"
+    ]
+   },
+   "as_of": "2021-09-30",
+   "primary_source": {
+    "source_id": "31470671",
+    "title": "Detection of Pig Cells Harboring Porcine Endogenous Retroviruses in Non-Human Primate Bladder After Renal Xenotransplantation.",
+    "date": "2019-08-29",
+    "type": "S1",
+    "role": "PRIMARY_COHORT",
+    "url": "https://europepmc.org/article/MED/31470671",
+    "independent_validation_eligible": "YES"
+   }
+  },
+  {
+   "thought_id": "OE-XENO-011",
+   "proposition": "Costimulation-blockade immunosuppression prolongs life-supporting renal xenograft survival compared with regimens built from conventional approved agents",
+   "tuple": {
+    "barrier": "T-cell mediated rejection",
+    "modality": "recipient immunosuppression, costimulation blockade",
+    "target": "life-supporting renal xenograft survival",
+    "claimed_effect": "prolonged survival versus conventional regimen"
+   },
+   "g1_decision": "ADVANCE",
+   "g1_decision_first_pass": "MONITOR",
+   "g1_superseded": true,
+   "STM": {
+    "score": 2.69,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "POM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "unmet_conditions": [],
+   "current_evaluated_gate": "G1",
+   "gates_never_evaluated": [
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+   ],
+   "next_gate_status": {
+    "gate": "G2",
+    "blocked_by": "coverage(SVM) below the 0.700 floor at G2.4",
+    "svm_coverage": 0,
+    "svm_matrix_state": "NOT_COMPUTABLE",
+    "missing": [
+     "SVM-1",
+     "SVM-2",
+     "SVM-3",
+     "SVM-4"
+    ]
+   },
+   "as_of": "2021-09-30",
+   "primary_source": {
+    "source_id": "31283686",
+    "title": "Life-supporting Kidney Xenotransplantation From Genetically Engineered Pigs in Baboons: A Comparison of Two Immunosuppressive Regimens.",
+    "date": "2019-07-09",
+    "type": "S1",
+    "role": "PRIMARY_COHORT",
+    "url": "https://europepmc.org/article/MED/31283686",
+    "independent_validation_eligible": "YES"
+   }
+  },
+  {
+   "thought_id": "OE-XENO-012",
+   "proposition": "Temporary recipient complement inhibition with an anti-C5 antibody reduces early antibody-mediated rejection and prolongs renal xenograft survival",
+   "tuple": {
+    "barrier": "early antibody-mediated rejection",
+    "modality": "recipient pharmacological complement inhibition",
+    "target": "renal xenograft survival",
+    "claimed_effect": "reduced early rejection and prolonged survival"
+   },
+   "g1_decision": "ADVANCE",
+   "g1_decision_first_pass": "ADVANCE",
+   "g1_superseded": false,
+   "STM": {
+    "score": 2.69,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "POM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "unmet_conditions": [],
+   "current_evaluated_gate": "G1",
+   "gates_never_evaluated": [
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+   ],
+   "next_gate_status": {
+    "gate": "G2",
+    "blocked_by": "coverage(SVM) below the 0.700 floor at G2.4",
+    "svm_coverage": 0.35,
+    "svm_matrix_state": "NOT_COMPUTABLE",
+    "missing": [
+     "SVM-2",
+     "SVM-3",
+     "SVM-4"
+    ]
+   },
+   "as_of": "2021-09-30",
+   "primary_source": {
+    "source_id": "34238812",
+    "title": "Anti-C5 Antibody Tesidolumab Reduces Early Antibody-mediated Rejection and Prolongs Survival in Renal Xenotransplantation.",
+    "date": "2021-07-10",
+    "type": "S1",
+    "role": "PRIMARY_COHORT",
+    "url": "https://europepmc.org/article/MED/34238812",
+    "independent_validation_eligible": "YES"
+   }
+  },
+  {
+   "thought_id": "OE-XENO-013",
+   "proposition": "Current preclinical predictors, non-human-primate models and negative antibody crossmatch, understate the antibody risk to a triple-knockout porcine renal xenograft in humans",
+   "tuple": {
+    "barrier": "limited predictive validity of preclinical antibody testing",
+    "modality": "selection and interpretation of preclinical model and crossmatch assay",
+    "target": "prediction of renal xenograft outcome in humans",
+    "claimed_effect": "current predictors understate antibody risk"
+   },
+   "g1_decision": "MONITOR",
+   "g1_decision_first_pass": "MONITOR",
+   "g1_superseded": false,
+   "STM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "POM": {
+    "score": 2.38,
+    "coverage": 0.8,
+    "computable": true
+   },
+   "unmet_conditions": [
+    "G1.1"
+   ],
+   "current_evaluated_gate": "G1",
+   "gates_never_evaluated": [
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+   ],
+   "next_gate_status": {
+    "gate": "G2",
+    "blocked_by": "coverage(SVM) below the 0.700 floor at G2.4",
+    "svm_coverage": 0,
+    "svm_matrix_state": "NOT_COMPUTABLE",
+    "missing": [
+     "SVM-1",
+     "SVM-2",
+     "SVM-3",
+     "SVM-4"
+    ]
+   },
+   "as_of": "2021-09-30",
+   "primary_source": {
+    "source_id": "28099406",
+    "title": "Reducing the Threshold for Clinical Renal Xenotransplantation.",
+    "date": "2017-01-19",
+    "type": "S1",
+    "role": "PRIMARY_COHORT",
+    "url": "https://europepmc.org/article/MED/28099406",
+    "independent_validation_eligible": "YES"
+   }
+  }
+ ],
+ "thought_history": {
+  "thought_id": "OE-XENO-012",
+  "proposition": "Temporary recipient complement inhibition with an anti-C5 antibody reduces early antibody-mediated rejection and prolongs renal xenograft survival",
+  "testable_prediction": "Recipients given anti-C5 antibody show less early antibody-mediated rejection and longer graft survival than untreated controls",
+  "tuple": {
+   "barrier": "early antibody-mediated rejection",
+   "modality": "recipient pharmacological complement inhibition",
+   "target": "renal xenograft survival",
+   "claimed_effect": "reduced early rejection and prolonged survival"
+  },
+  "originating_authors": "Adams AB; Tector AJ",
+  "institution": "University of Minnesota School of Medicine, Minneapolis MN",
+  "primary_source": {
+   "source_id": "34238812",
+   "title": "Anti-C5 Antibody Tesidolumab Reduces Early Antibody-mediated Rejection and Prolongs Survival in Renal Xenotransplantation.",
+   "date": "2021-07-10",
+   "type": "S1",
+   "role": "PRIMARY_COHORT",
+   "url": "https://europepmc.org/article/MED/34238812",
+   "independent_validation_eligible": "YES"
+  },
+  "states": [
+   {
+    "as_of": "2021-09-30",
+    "label": "Historical baseline",
+    "g1_decision": "ADVANCE",
+    "STM": {
+     "score": 2.69,
+     "coverage": 0.8
+    },
+    "POM": {
+     "score": 2.38,
+     "coverage": 0.8
+    },
+    "SVM": {
+     "score": "NOT_COMPUTABLE",
+     "coverage": 0.35,
+     "floor": 0.6,
+     "blocks": "G2.4 requires coverage(SVM) >= 0.700"
+    },
+    "svm_dimensions": [
+     {
+      "dimension_id": "SVM-1",
+      "weight": 0.35,
+      "state": "SCORED",
+      "anchor": 3,
+      "search_status": null,
+      "confidence": "MEDIUM",
+      "sources": [
+       "34238812"
+      ],
+      "justification": "The primary source reports in vivo work in a non-human primate recipient (pig-to-baboon or piglet-to-rhesus), which is the large-animal anchor."
+     },
+     {
+      "dimension_id": "SVM-2",
+      "weight": 0.25,
+      "state": "INSUFFICIENT_EVIDENCE",
+      "anchor": null,
+      "search_status": "UNRESOLVED",
+      "confidence": null,
+      "sources": [],
+      "justification": "No supporting source in the eligible set shares zero authors with the primary source, so I-1 authorship independence fails or no corroborating record exists. A Europe PMC topic probe bounded at the cutoff returned zero-author-overlap candidates for seven thoughts, but I-2 and I-3 were not established for any, so none can be classified. No anchor proposed."
+     },
+     {
+      "dimension_id": "SVM-3",
+      "weight": 0.2,
+      "state": "INSUFFICIENT_EVIDENCE",
+      "anchor": null,
+      "search_status": "NOT_SEARCHED",
+      "confidence": null,
+      "sources": [],
+      "justification": "No eligible source reports a sustained-effect duration attributable to this specific proposition. Durations reported in the subfield are not attributed per proposition."
+     },
+     {
+      "dimension_id": "SVM-4",
+      "weight": 0.2,
+      "state": "INSUFFICIENT_EVIDENCE",
+      "anchor": null,
+      "search_status": "NOT_SEARCHED",
+      "confidence": null,
+      "sources": [],
+      "justification": "No documented search of the cohort corpus for contrary findings was performed in WO-008. Anchor 4 requires that documented search; it was not run, so no anchor is proposed."
+     }
+    ]
+   },
+   {
+    "as_of": "2022-02-28",
+    "label": "Five-month reassessment",
+    "g1_decision": "ADVANCE",
+    "STM": {
+     "score": 2.69,
+     "coverage": 0.8
+    },
+    "POM": {
+     "score": 2.38,
+     "coverage": 0.8
+    },
+    "SVM": {
+     "score": "NOT_COMPUTABLE",
+     "coverage": 0.35,
+     "floor": 0.6,
+     "blocks": "G2.4 requires coverage(SVM) >= 0.700"
+    },
+    "svm_dimensions": [
+     {
+      "dimension_id": "SVM-1",
+      "weight": 0.35,
+      "state": "SCORED",
+      "anchor": 3,
+      "search_status": null,
+      "confidence": "MEDIUM",
+      "sources": [
+       "34238812"
+      ],
+      "justification": "The primary source reports in vivo work in a non-human primate recipient (pig-to-baboon or piglet-to-rhesus), which is the large-animal anchor."
+     },
+     {
+      "dimension_id": "SVM-2",
+      "weight": 0.25,
+      "state": "INSUFFICIENT_EVIDENCE",
+      "anchor": null,
+      "search_status": "SEARCHED_NOT_FOUND",
+      "confidence": null,
+      "sources": [],
+      "justification": "As-of 2022-02-28. A bounded Europe PMC search of 2021-10-01 to 2022-02-28 returned no record testing recipient pharmacological complement inhibition in renal xenotransplantation. The only in-window complement record, PMID 35001433, reports heart ALLOtransplantation and is barred from independent validation by the EXCLUDE_CONTEXTUAL restriction. Still no classifiable corroboration, and the search is now documented rather than merely not run."
+     },
+     {
+      "dimension_id": "SVM-3",
+      "weight": 0.2,
+      "state": "INSUFFICIENT_EVIDENCE",
+      "anchor": null,
+      "search_status": "NOT_SEARCHED",
+      "confidence": null,
+      "sources": [],
+      "justification": "No eligible source reports a sustained-effect duration attributable to this specific proposition. Durations reported in the subfield are not attributed per proposition."
+     },
+     {
+      "dimension_id": "SVM-4",
+      "weight": 0.2,
+      "state": "INSUFFICIENT_EVIDENCE",
+      "anchor": null,
+      "search_status": "SEARCHED_NOT_FOUND",
+      "confidence": null,
+      "sources": [],
+      "justification": "As-of 2022-02-28. A bounded window search returned no record contradicting this proposition. PMID 35143091 reports pig-to-NHP renal outcomes significantly inferior to allotransplantation, which is a subfield benchmark rather than a refutation of recipient complement inhibition. Anchor 4 still requires a documented corpus-wide search, which was not performed."
+     }
+    ]
+   }
+  ],
+  "changes": {
+   "anchors_changed": [],
+   "coverage_changed": false,
+   "gate_outcome_changed": false,
+   "search_status_changed": [
+    {
+     "dimension_id": "SVM-2",
+     "from": "UNRESOLVED",
+     "to": "SEARCHED_NOT_FOUND",
+     "meaning": "At baseline corroboration could not be classified. After the window search, a documented search returned nothing qualifying."
+    },
+    {
+     "dimension_id": "SVM-4",
+     "from": "NOT_SEARCHED",
+     "to": "SEARCHED_NOT_FOUND",
+     "meaning": "At baseline the question had not been asked. It has now been asked and answered."
+    }
+   ]
+  },
+  "rejected_evidence": [
+   {
+    "source_id": "34800323",
+    "date": "2021-11-20",
+    "title": "Genetically engineered pig kidney transplantation in a brain-dead human subject.",
+    "kind": "NEW_VALIDATION_FOR_OTHER_THOUGHTS",
+    "attributable": false,
+    "admissible": true,
+    "reason": "Human exposure to a pig kidney, but the modality is donor genetic engineering plus donor thymic tissue. No complement inhibitor is named. Does not address recipient pharmacological complement inhibition.",
+    "url": "https://europepmc.org/article/MED/34800323"
+   },
+   {
+    "source_id": "35001433",
+    "date": "2022-01-10",
+    "title": "Complement blockade with eculizumab to treat acute symptomatic humoral rejection after heart transplantation.",
+    "kind": "NEW_VALIDATION_CANDIDATE",
+    "attributable": false,
+    "admissible": true,
+    "reason": "Reported evidence is heart ALLOtransplantation driven by anti-HLA antibodies. PROTOCOL-v1.1 E2 excludes it; at most EXCLUDE_CONTEXTUAL, which carries independent_validation_eligible = NO and cannot satisfy SVM-2 at any anchor.",
+    "url": "https://europepmc.org/article/MED/35001433"
+   },
+   {
+    "source_id": "35049121",
+    "date": "2022-01-20",
+    "title": "First clinical-grade porcine kidney xenotransplant using a human decedent model.",
+    "kind": "NEW_VALIDATION_FOR_OTHER_THOUGHTS",
+    "attributable": false,
+    "admissible": true,
+    "reason": "Human decedent exposure with a crossmatch protocol. No complement inhibitor named. Modality is donor engineering, not recipient complement inhibition.",
+    "url": "https://europepmc.org/article/MED/35049121"
+   },
+   {
+    "source_id": "35114360",
+    "date": "2022-01-31",
+    "title": "T and B lymphocyte dynamics after genetically-modified pig-to-baboon kidney xenotransplantation with an anti-CD40mAb-based immunosuppressive regimen.",
+    "kind": "NEW_VALIDATION_FOR_OTHER_THOUGHTS",
+    "attributable": false,
+    "admissible": true,
+    "reason": "Costimulation blockade, which is the modality of OE-XENO-011, not complement inhibition.",
+    "url": "https://europepmc.org/article/MED/35114360"
+   },
+   {
+    "source_id": "35143091",
+    "date": "2022-02-28",
+    "title": "Measuring success in pig to non-human-primate renal xenotransplantation: Systematic review and comparative outcomes analysis of 1051 life-sustaining N",
+    "kind": "NEW_CONSTRAINT",
+    "attributable": false,
+    "admissible": true,
+    "reason": "Systematic review across 1051 transplants reporting xenograft survival significantly inferior to allograft. A subfield-level constraint observation, not attributable to this proposition and not a refutation of it.",
+    "url": "https://europepmc.org/article/MED/35143091"
+   }
+  ],
+  "subsequently_published": [
+   {
+    "source_id": "39185772",
+    "date": "2024-07-01",
+    "title": "Iscalimab Combined With Transient Tesidolumab Prolongs Survival in Pig-to-Rhesus Monkey Renal Xenografts.",
+    "attributable": true,
+    "admissible_at_either_state": false,
+    "reason": "Directly addresses the proposition: transient anti-C5 (tesidolumab) in a pig-to-rhesus renal model, by the originating group. INADMISSIBLE: first published 2024-07-01, which is 28 months after the as-of date of 2022-02-28. Recorded as a candidate and excluded by the temporal rule, not by relevance.",
+    "url": "https://europepmc.org/article/MED/39185772"
+   }
+  ],
+  "why_cannot_advance": "G2 requires coverage(SVM) >= 0.700. Coverage is 0.350 because SVM-2, SVM-3 and SVM-4 carry no qualifying evidence. No anchor is low; three are absent."
+ },
+ "sourcing_brief": {
+  "thought_id": "OE-XENO-012",
+  "proposition": "Temporary recipient complement inhibition with an anti-C5 antibody reduces early antibody-mediated rejection and prolongs renal xenograft survival",
+  "why_it_matters": "Early antibody-mediated rejection destroys pig renal xenografts before any later barrier can be reached. A recipient-side intervention would apply regardless of which donor genotype is used, so it is not displaced by progress in donor engineering.",
+  "supporting_evidence": [
+   {
+    "source_id": "34238812",
+    "title": "Anti-C5 Antibody Tesidolumab Reduces Early Antibody-mediated Rejection and Prolongs Survival in Renal Xenotransplantation.",
+    "date": "2021-07-10",
+    "type": "S1",
+    "role": "PRIMARY_COHORT",
+    "url": "https://europepmc.org/article/MED/34238812",
+    "independent_validation_eligible": "YES",
+    "role_detail": "Primary source. Reports its own experimental data in a pig-to-primate renal model.",
+    "anchor_supported": "SVM-1 anchor 3, large-animal in vivo"
+   }
+  ],
+  "historical_gate_status": {
+   "G1": {
+    "decision": "ADVANCE",
+    "at": [
+     "2021-09-30",
+     "2022-02-28"
+    ]
+   },
+   "G2": {
+    "decision": "NOT EVALUATED \u2014 cannot be satisfied",
+    "reason": "coverage(SVM) 0.350 against the 0.700 floor at G2.4"
+   },
+   "G3_G5": {
+    "decision": "NEVER EVALUATED"
+   }
+  },
+  "binding_validation_barrier": {
+   "dimension": "SVM-2",
+   "weight": 0.25,
+   "statement": "Independent corroboration of the anti-C5 effect in a renal xenograft model, by a group sharing no authors with the originating team, satisfying the three-part independence test. This single item is the largest contributor to the coverage shortfall.",
+   "search_status_at_asof": "SEARCHED_NOT_FOUND"
+  },
+  "researchers_and_institutions": {
+   "originating_authors": "Adams AB; Tector AJ",
+   "institution": "University of Minnesota School of Medicine, Minneapolis MN",
+   "documented_funding": [
+    {
+     "source_id": "NIH-U01AI126322",
+     "title": "Strategies to Optimize Pig-to-Primate Kidney Xenograft Survival",
+     "date": "2016-07-01",
+     "type": "S4",
+     "role": "EXPANDED_SEARCH",
+     "url": "https://reporter.nih.gov/search/?projectnum=U01AI126322",
+     "independent_validation_eligible": "YES",
+     "detail": "Names both originating authors as principal investigators"
+    },
+    {
+     "source_id": "NIH-R01AI126322",
+     "title": "Optimizing Strategies to Overcome Kidney Xenograft Rejection",
+     "date": "2016-07-01",
+     "type": "S4",
+     "role": "EXPANDED_SEARCH",
+     "url": "https://reporter.nih.gov/search/?projectnum=R01AI126322",
+     "independent_validation_eligible": "YES",
+     "detail": "Names the first originating author as principal investigator"
+    }
+   ],
+   "note": "Only documented relationships are listed. No company, licence or investor relationship is recorded for this proposition."
+  },
+  "evidence_that_would_justify_reassessment": [
+   "An independent group reproduces the anti-C5 effect in a renal xenograft model (SVM-2).",
+   "An effect duration is extracted from the primary source full text (SVM-3).",
+   "A documented corpus-wide search for contrary findings is completed (SVM-4)."
+  ],
+  "remaining_uncertainties": [
+   "STM-4 novelty was never computed; the reference comparison was not performed.",
+   "SVM-2 independence could not be classified from indexed metadata alone.",
+   "CCM, PSEM and CFM carry no scored dimensions, so commercialization is not assessed.",
+   "One reader produced every anchor. B-8 is open."
+  ],
+  "explicitly_not_claimed": [
+   "No company relationship.",
+   "No financing history.",
+   "No valuation.",
+   "No investment recommendation.",
+   "No probability of success."
+  ]
+ },
+ "stm2_correction": [
+  {
+   "thought_id": "OE-XENO-001",
+   "original_anchor": 2,
+   "corrected_anchor": 2,
+   "changed": false,
+   "basis": "FULL_TEXT",
+   "evidence": "PMC5357451 retrieved 2026-11-05. No Materials and Methods and no Results section; no own animal series reported. The mechanism is supported by cited prior work."
+  },
+  {
+   "thought_id": "OE-XENO-002",
+   "original_anchor": 2,
+   "corrected_anchor": 2,
+   "changed": false,
+   "basis": "FULL_TEXT",
+   "evidence": "PMC5357451 retrieved 2026-11-05. No Materials and Methods and no Results section; no own animal series reported. The mechanism is supported by cited prior work."
+  },
+  {
+   "thought_id": "OE-XENO-003",
+   "original_anchor": 2,
+   "corrected_anchor": 2,
+   "changed": false,
+   "basis": "FULL_TEXT",
+   "evidence": "PMC5857301 retrieved 2026-11-05. No Materials and Methods and no Results section; the text states \"we review\". Mechanism supported by cited prior work."
+  },
+  {
+   "thought_id": "OE-XENO-004",
+   "original_anchor": 2,
+   "corrected_anchor": 2,
+   "changed": false,
+   "basis": "FULL_TEXT",
+   "evidence": "PMC5857301 retrieved 2026-11-05. No Materials and Methods and no Results section; the text states \"we review\". Mechanism supported by cited prior work."
+  },
+  {
+   "thought_id": "OE-XENO-005",
+   "original_anchor": 3,
+   "corrected_anchor": 3,
+   "changed": false,
+   "basis": "FULL_TEXT",
+   "evidence": "PMC6158079 retrieved 2026-11-05. Contains Materials and Methods and Results sections and reports its own pig-to-baboon series (6 animals). Mechanism supported by the source\u2019s own data."
+  },
+  {
+   "thought_id": "OE-XENO-006",
+   "original_anchor": 2,
+   "corrected_anchor": 2,
+   "changed": false,
+   "basis": "FULL_TEXT",
+   "evidence": "PMC6249080 retrieved 2026-11-05. No Materials and Methods and no Results section. Figures carrying n and P values are explicitly captioned \"Reproduced with permission from Zhang Z, et al.\" and \"For details of methods, see reference 67\". The data shown is cited prior work, not the source\u2019s own."
+  },
+  {
+   "thought_id": "OE-XENO-007",
+   "original_anchor": 2,
+   "corrected_anchor": 2,
+   "changed": false,
+   "basis": "FULL_TEXT",
+   "evidence": "PMC6249080 retrieved 2026-11-05. No Materials and Methods and no Results section. Figures carrying n and P values are explicitly captioned \"Reproduced with permission from Zhang Z, et al.\" and \"For details of methods, see reference 67\". The data shown is cited prior work, not the source\u2019s own."
+  },
+  {
+   "thought_id": "OE-XENO-008",
+   "original_anchor": 2,
+   "corrected_anchor": 3,
+   "changed": true,
+   "basis": "ABSTRACT",
+   "evidence": "Full text not available: no PMC record, not open access. Structured abstract reports Background, Methods and Results for six xenotransplants of Landrace piglet kidneys into rhesus monkeys that the authors performed. Own data. LIMITATION: assessed from the abstract alone."
+  },
+  {
+   "thought_id": "OE-XENO-009",
+   "original_anchor": 2,
+   "corrected_anchor": 3,
+   "changed": true,
+   "basis": "ABSTRACT",
+   "evidence": "Full text not available: no PMC record, not open access. Abstract states \"We have evaluated platelet counts, plasma fibrinogen, and parameters of inflammation\" and that parameters \"were measured in recipient baboons (n = 16)\". Own data. LIMITATION: assessed from the abstract alone, and the title and Europe PMC publication type both label this a review article, which conflicts with the abstract\u2019s own-data language. Flagged as the least certain of the thirteen."
+  },
+  {
+   "thought_id": "OE-XENO-010",
+   "original_anchor": 3,
+   "corrected_anchor": 3,
+   "changed": false,
+   "basis": "FULL_TEXT",
+   "evidence": "PMC6784250 retrieved 2026-11-05. Contains Materials and Methods and Results sections, an IACUC statement and n = 4. Mechanism supported by the source\u2019s own data."
+  },
+  {
+   "thought_id": "OE-XENO-011",
+   "original_anchor": 2,
+   "corrected_anchor": 3,
+   "changed": true,
+   "basis": "ABSTRACT",
+   "evidence": "Full text not available: no PMC record, not open access. Abstract states \"Ten life-supporting kidney transplants were carried out in baboons\" and reports which eight produced informative data. Own data. LIMITATION: assessed from the abstract alone."
+  },
+  {
+   "thought_id": "OE-XENO-012",
+   "original_anchor": 3,
+   "corrected_anchor": 3,
+   "changed": false,
+   "basis": "FULL_TEXT",
+   "evidence": "PMC8915445 retrieved 2026-11-05. Contains Materials and Methods and Results sections and reports n = 7. Mechanism supported by the source\u2019s own data."
+  },
+  {
+   "thought_id": "OE-XENO-013",
+   "original_anchor": 2,
+   "corrected_anchor": 2,
+   "changed": false,
+   "basis": "FULL_TEXT",
+   "evidence": "PMC7228590 retrieved 2026-11-05 (WO-006-B). A commentary. It advances its own arguments but reports no experiment of its own; the Neu5Gc mechanism rests on its cited reference 8."
+  }
+ ]
+}

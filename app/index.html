@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Origin Engine</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%232f6b4f'/%3E%3Cpath d='M3 12h10M4.5 9.5l2.5-3 2.5 2 2-4.5' stroke='%23fff' stroke-width='1.3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="bar">
+    <div>
+      <div class="id">
+        <span class="mark" aria-hidden="true">&#9671;</span>
+        <h1>Origin Engine</h1>
+      </div>
+      <p class="sub">Pig-to-human kidney xenotransplantation &mdash; 13 scientific thoughts, historical cohort with a 2021-09-30 cutoff</p>
+      <p class="independent">Independent research prototype &middot; not affiliated with or endorsed by any investment firm</p>
+    </div>
+    <div class="cutoff" role="group" aria-label="Observation date">
+      <span class="cutoff-label">Observation date</span>
+      <div class="seg" id="asof-seg"></div>
+    </div>
+  </div>
+  <div id="banner" class="banner"></div>
+  <div id="asof-note" class="banner note"></div>
+
+  <section id="scope-disclosure" class="disclosure" aria-labelledby="scope-disclosure-h">
+    <p class="eyebrow accent">Read this first</p>
+    <h2 id="scope-disclosure-h">How much of this instrument is actually working</h2>
+    <p class="lede">
+      This is a research prototype. It was built to test whether a disciplined, evidence-based
+      process can track scientific ideas over time &mdash; not to pick investments. Before reading
+      any result below, here is exactly how far it got.
+    </p>
+    <ul class="disclosure-list">
+      <li>
+        <strong>The 13-thought cohort is a provisional pilot.</strong> It is one small subfield,
+        drawn from one literature query. It is not a sample of anything wider, and no conclusion
+        here generalises beyond it.
+      </li>
+      <li>
+        <strong>Only the first of five gates was ever evaluated.</strong> Gates 2 to 5 were never
+        reached, so nothing here speaks to whether these ideas could be built, commercialised or
+        financed.
+      </li>
+      <li>
+        <strong>Six of the eight matrices cannot be computed.</strong> Too little evidence exists
+        at the level of an individual scientific proposition to score them. That is a declared
+        gap, not a finding about the science.
+      </li>
+      <li>
+        <strong>The split you see rests on a single dimension.</strong> Of 38 designed dimensions,
+        one &mdash; STM&#8209;2, whether a paper supports its mechanism with its own data &mdash;
+        decides which thoughts advance. The other scored dimensions are identical across all 13.
+        <em>Treat the advance/monitor split as that one judgement, restated.</em>
+      </li>
+      <li>
+        <strong>We tested the settings, not the science.</strong> Varying every weight and every
+        coverage threshold changes no outcome. That shows the result is not an artefact of our
+        chosen numbers. <em>It does not show the result is correct.</em>
+      </li>
+      <li>
+        <strong>No independent expert has checked this yet.</strong> Every judgement was made by
+        one reader. A blinded review package is prepared and unused. Until two independent readers
+        agree, the reliability of the key dimension is unmeasured.
+      </li>
+      <li>
+        <strong>There is no recommendation here, and no probability.</strong> No score is a
+        likelihood of success, financing or return. The matrices measure how much documented
+        evidence exists, and nothing more. They are never combined into a single number.
+      </li>
+    </ul>
+  </section>
+
+  <nav id="tabs" role="tablist"></nav>
+</header>
+
+<main>
+  <section id="view-funnel" class="view" role="tabpanel"></section>
+  <section id="view-history" class="view" role="tabpanel"></section>
+  <section id="view-brief" class="view" role="tabpanel"></section>
+</main>
+
+<footer>
+  <div id="limitations"></div>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
